@@ -18,6 +18,18 @@ interface Props {
   params: {id: string}
 }
 
+// const opinions = [
+//   {
+//     id: "1234", 
+//     score: 4.5, 
+//     comment: "La verdad me parecio un muy buen trabajador", 
+//     client: {
+//       name: "Juan Jose", 
+//       last_name: "Diaz"
+//     }
+//   }
+// ]
+
 function ProfessionalPage( {params}: Props) {
 
   
@@ -127,11 +139,15 @@ function ProfessionalPage( {params}: Props) {
                 ★ ★ ★ ★ ★
               </div>
             </div>
-            <p className='text-sm font-light'>Valoracion global</p>
+            <p className='text-sm font-extralight'>Valoracion global</p>
           </div>
 
           <h3 className='font-semibold text-lg'>Opiniones de clientes</h3>
+          <div className="opiniones-clientes">
+            {
 
+            }
+          </div>
         </div>
       </div>
       
@@ -141,7 +157,7 @@ function ProfessionalPage( {params}: Props) {
         </div>
         <div className="flex  px-8 py-5">
 
-          {JSON.stringify(professional)}
+          {/* {JSON.stringify(professional)}
           <br />
           <br />
           {JSON.stringify(services)}
@@ -150,7 +166,7 @@ function ProfessionalPage( {params}: Props) {
           {JSON.stringify(specialities)}
           <br />
           <br />
-          {JSON.stringify(cities)}
+          {JSON.stringify(cities)} */}
           </div>
       </div>
     </div>
